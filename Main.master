@@ -1,0 +1,29 @@
+<%@ Master Language="C#" AutoEventWireup="true" Src="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html>
+
+<html xmls="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <h1>Agenda</h1>
+        <table id="header">
+            <tr>
+                <td>
+                    <asp:LinkButton ID="lnkVerContactos" runat="server" Text="Ver Contactos" OnClick="lnkBtnAll_Click"></asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="lnkNuevoRegistro" runat="server" Text="Nuevo Registro" OnClick="lnkBtnAdd_Click"></asp:LinkButton>
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="content" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
